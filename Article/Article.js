@@ -11,7 +11,15 @@ class Article {
 		// Set a click handler on the expandButton reference, calling the expandArticle method.
 		this.expandButton.addEventListener('click', () => {
 			this.expandArticle();
-		});
+    });
+    
+    this.readButton = this.domElement.querySelector('.close');
+
+    this.readButton.addEventListener('click', () => {
+      this.readArticle();
+    });
+
+    
 
 		// An alternate way of binding this to the function
 		// this.expandArticle = this.expandArticle.bind(this)
@@ -23,7 +31,11 @@ class Article {
     this.domElement.classList.toggle('article-open');
     // Update text content of button when clicked
     this.expandButton.textContent = 'Click to Close';
-	}
+  }
+  
+  readArticle(event) {
+    this.domElement.style.display = "none";
+  }
 }
 
 /* START HERE: 

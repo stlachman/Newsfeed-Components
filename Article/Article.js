@@ -52,32 +52,33 @@ articles.forEach(function(article) {
 
 // Article Constructor
 
-class ArticleComponent {
-	constructor(element) {
-		const articleContainer = document.querySelector('.articles');
+// class ArticleComponent {
 
-		const articleWrapper = document.createElement('div');
-		articleWrapper.classList = 'article';
+//   constructor(element) {
+//     const articleContainer = document.querySelector('.articles');
+//     const articleWrapper = document.createElement('div');
 
-		articleContainer.appendChild(articleWrapper);
-		this.title = element.title;
-		this.date = element.date;
-		this.button = element.button;
-		this.content = element.content;
+//     articleWrapper.classList = 'article';
 
-		const articleTitle = document.createElement('h2');
-		articleTitle.textContent = this.title;
+//     articleContainer.appendChild(articleWrapper);
+//     this.title = element.title;
+//     this.date = element.date;
+//     this.button = element.button;
+//     this.content = element.content;
+//   }
 
-		articleWrapper.appendChild(articleTitle);
-	}
-}
+//   createArticleTitle() {
+//     const articleTitle = document.createElement('h2');
+//     articleTitle.textContent = this.title; 
+//     articleWrapper.appendChild(articleTitle);
+//   }
+// }
 
-const articleData = {
-	articleTitle: 'Lambda School Students: "We\'re the best!"',
-	date: 'Nov 5th, 2017',
-	button: 'Read',
-	content:
-		'Dagobah hutt jawa leia calamari ventress skywalker yoda. Binks wicket hutt coruscant sidious naboo ackbar tatooine. Hutt lars padmé darth. Maul solo darth darth jabba qui-gon chewbacca darth maul.'
-};
+// const articleData = {
+//   articleTitle: 'Lambda School Students: "We\'re the best!"',
+//   date: 'Nov 5th, 2017',
+//   button: 'Read',
+//   content: "Dagobah hutt jawa leia calamari ventress skywalker yoda. Binks wicket hutt coruscant sidious naboo ackbar tatooine. Hutt lars padmé darth. Maul solo darth darth jabba qui-gon chewbacca darth maul."
+// }
 
-const article = new ArticleComponent(articleData);
+// const article = new ArticleComponent(articleData);

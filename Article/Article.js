@@ -33,6 +33,7 @@ class Article {
 */
 
 let articles = document.querySelectorAll('.article');
+// Iterate through each article node and pass value into class constructor
 articles.forEach(function(article) {
-	const objArticle = new Article(article);
+  const objArticle = new Article(article);
 });
